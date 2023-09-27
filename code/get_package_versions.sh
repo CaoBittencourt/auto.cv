@@ -22,3 +22,9 @@ sed -i -e "s/$/,R/" package_versions.csv
 
 # Add variable names to beginning of .csv file
 sed -i "1s/^/package_name,package_subtitle,version,programming_language \n/" package_versions.csv
+
+# Change directory to code
+cd /c/Users/CAO/Documents/GitHub/auto.cv/code
+
+# Run R script to generate LaTeX input
+Rscript sketch_packages.R
