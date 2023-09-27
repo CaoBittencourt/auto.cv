@@ -80,7 +80,7 @@ df_packages %>%
   chr_latex_input
 
 # - Write .tex file -------------------------------------------------------
-readr::write_file(
+write_file(
   x = chr_latex_input
   , file = './committees.tex'
 )
