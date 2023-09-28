@@ -4,10 +4,6 @@
 cd /c/Users/CAO/Documents/GitHub/
 
 # Get all R package DESCRIPTION files
-# package_versions=$(for folder in find *atlas.*/ -name "DESCRIPTION"; do
-#     grep -iE "^Package|Title|Version" ${folder}/DESCRIPTION
-# done)
-
 package_folders=$(find . -name "DESCRIPTION")
 
 package_folders=${package_folders///DESCRIPTION/}
