@@ -36,21 +36,34 @@ df_packages %>%
         package_subtitle,
         '".'
       )
-  ) -> df_packages 
+  ) -> df_packages
 
 # Escape characters
 
-# Arrange by package version
+# Package version data type
 df_packages %>% 
   mutate(
     version = 
       as.numeric_version(
         version
       )
+  ) -> df_packages
+
+# In case of duplicates, keep latest version
+df_packages %>% 
+  group_by(
+    package_name
   ) %>% 
-  arrange(desc(
+  slice_max(
     version
-  )) -> df_packages
+    , n = 1
+  ) %>% 
+  slice(1) %>% 
+  ungroup() %>% 
+  arrange(
+    desc(version)
+    , package_name
+  ) -> df_packages
 
 # [OUTPUT] ----------------------------------------------------------------
 # - Collapse to input format ----------------------------------------------
