@@ -66,6 +66,12 @@ df_packages %>%
   ) -> df_packages
 
 # [OUTPUT] ----------------------------------------------------------------
+# - Update .csv file ------------------------------------------------------
+write_csv(
+  x = df_packages
+  , file = './package_versions.csv'
+)
+
 # - Collapse to input format ----------------------------------------------
 # Paste LaTeX input
 df_packages %>%
