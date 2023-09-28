@@ -22,4 +22,4 @@ cd /c/Users/CAO/Documents/GitHub/auto.cv/code
 bash get_package_versions.sh
 
 # Run R script to generate LaTeX input
-Rscript sketch_packages.R
+Rscript render_package_versions.R
