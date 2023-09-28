@@ -1,3 +1,3 @@
 # auto.cv
  Automated Curriculum Vitae
- Version: v.0.3.0
+ Version: v.0.4.0
