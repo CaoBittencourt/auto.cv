@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Change directory to code
-cd /c/Users/CAO/Documents/GitHub/auto.cv/code
+# Change directory to auto.cv/code
+cd /home/Cao/Storage/github/auto.cv/code
 
 # # Setup contrab job to execute package version script
-# contrab -e
+# crontab -e
 
 # # 1: Minutes (0-59)
 # # 2: Hours (0-23)
@@ -15,8 +15,8 @@ cd /c/Users/CAO/Documents/GitHub/auto.cv/code
 # * * * * 6 /get_package_versions.sh
 # # 0.5 * * * * /get_package_versions.sh
 
-# Change directory to code
-cd /c/Users/CAO/Documents/GitHub/auto.cv/code
+# Change directory to auto.cv/code
+# cd /home/Cao/Storage/github/auto.cv/code
 
 # Run bash script to update package_versions.csv
 bash get_package_versions.sh

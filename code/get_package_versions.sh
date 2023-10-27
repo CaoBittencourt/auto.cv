@@ -1,29 +1,33 @@
 #!/bin/bash
 
 # Change directory to GitHub
-cd /c/Users/CAO/Documents/GitHub/
+cd /home/Cao/Storage/github
 
 # Get all R package DESCRIPTION files
-package_folders=$(find . -name "DESCRIPTION")
+pkg_dir=$(find . -name "DESCRIPTION")
 
-package_folders=${package_folders///DESCRIPTION/}
+pkg_dir=${pkg_dir///DESCRIPTION/}
 
-package_versions=$(
-    for folder in $package_folders; do
-        grep -iE "^Package|Title|Version" ${folder}/DESCRIPTION
+pkg_info=$(
+    for dir in $pkg_dir; do
+        grep -iE "^Package|Title|Version" ${dir}/DESCRIPTION
     done
 )
 
 # Keep only package name, title, and version (remove variable names)
-package_versions=${package_versions//Package: /}
-package_versions=${package_versions//Title: /}
-package_versions=${package_versions//Version: /}
+pkg_info=${pkg_info//Package: /}
+pkg_info=${pkg_info//Title: /}
+pkg_info=${pkg_info//Version: /}
 
-# Collapse package_versions to .csv format
-echo "$package_versions" | paste -d "," - - - >package_versions.csv
+# Change directory to auto.cv
+cd /home/Cao/Storage/github/auto.cv
+
+# Collapse pkg_info to .csv format
+echo "$pkg_info" | paste -d "," - - - >pkg_info.csv
 
 # Add R programming language to every line
-sed -i -e "s/$/,R/" package_versions.csv
+sed -i -e "s/$/,R/" pkg_info.csv
 
 # Add variable names to beginning of .csv file
-sed -i "1s/^/package_name,package_subtitle,version,programming_language \n/" package_versions.csv
+sed -i "1s/^/package_name,package_subtitle,version,programming_language \n/" pkg_info.csv
+

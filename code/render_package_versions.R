@@ -9,7 +9,7 @@ chr_pkg <- c(
 # Activate / install CRAN packages
 lapply(
   chr_pkg,
-  function(pkg) {
+  function(pkg){
     if (!require(pkg, character.only = T)) {
       install.packages(pkg)
     }
@@ -19,16 +19,16 @@ lapply(
 )
 
 # - Working directory -----------------------------------------------------
-setwd('C:/Users/CAO/Documents/GitHub')
+setwd('/home/Cao/Storage/github/auto.cv')
 
 # - Data ------------------------------------------------------------------
 # Read 'packages_versions.csv' file
-df_packages <- read_csv('package_versions.csv')
+df_packages <- read_csv('pkg_info.csv')
 
 # [DATA] ------------------------------------------------------------------
 # - Data wrangling --------------------------------------------------------
 # Add LaTeX quotes to package subtitle
-df_packages %>% 
+df_packages %>%
   mutate(
     package_subtitle = 
       paste0(
@@ -69,7 +69,7 @@ df_packages %>%
 # - Update .csv file ------------------------------------------------------
 write_csv(
   x = df_packages
-  , file = './package_versions.csv'
+  , file = './pkg_info.csv'
 )
 
 # - Collapse to input format ----------------------------------------------
@@ -93,6 +93,7 @@ df_packages %>%
         '\n',
         '\\end{cvhonors}',
         collapse = 'LALALALAL'
+        # collapse = 'LALALALAL'
       )
   ) %>%
   pull(latex_input) ->
