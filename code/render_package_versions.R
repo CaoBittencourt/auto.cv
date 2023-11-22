@@ -3,7 +3,7 @@
 # CRAN packages
 chr_pkg <- c(
   'readr' # Read files
-  , 'glue', 'tidyr', 'dplyr', 'purrr' # Data wrangling
+  , 'glue', 'tidyr', 'dplyr', 'purrr', 'stringr' # Data wrangling
 )
 
 # Activate / install CRAN packages
@@ -64,6 +64,30 @@ df_packages %>%
     desc(version)
     , package_name
   ) -> df_packages
+
+# # Smart quotes
+# df_packages %>% 
+#   mutate(
+#     package_subtitle = 
+#       package_subtitle %>% 
+#       str_replace_all(
+#         '^\'\'$|^\"$'
+#         , '^``$'
+#       ) %>% 
+#       str_replace_all(
+#         "^\\'$"
+#         , '^\\`$'
+#         # '^\'$'
+#         # , '^`$'
+#         
+#       )
+#   ) %>% 
+#   select(
+#     package_subtitle
+#   ) %>% 
+#   print(
+#     n = Inf
+#   )
 
 # [OUTPUT] ----------------------------------------------------------------
 # - Update .csv file ------------------------------------------------------
