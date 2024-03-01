@@ -1,15 +1,15 @@
 package_name,package_subtitle,version,programming_language
 atlas.skew,"``A Skewness Coefficient for Bounded Variables"".",3.0.6,R
+atlas.letters,"``Letter-Shaped Profiles: A Generalization of 'T-Shaped Skills'"".",2.6.0,R
+atlas.match,"``Quantitative Career Matching"".",2.4.0,R
 atlas.acti,"``ACTI: The Atlas Career Type Indicator"".",2.1.11,R
 atlas.efa,"``Automated Exploratory Factor Analysis"".",2.1.2,R
-atlas.match,"``Quantitative Career Matching"".",2.1.1,R
 atlas.eqvl,"``A Multi-Purpose Equivalence Coefficient"".",1.2.0,R
 atlas.misc,"``Miscellaneous Helper Functions"".",1.2.0,R
 atlas.ftools,"``Factor Analysis Tools"".",1.1.1,R
 atlas.class,"``A Bounded Variable Classifier"".",1.1.0,R
 atlas.kcoef,"``Statistical Analysis of Human Capital"".",1.1.0,R
 atlas.gene,"``A Career Profile Generality Coefficient"".",1.0.5,R
-atlas.letters,"``Letter-Shaped Profiles: A Generalization of 'T-Shaped Skills'"".",1.0.5,R
 atlas.comp,"``A Career Profile Competence Coefficient"".",1.0.4,R
 atlas.kind,"``A Skill Indispensability Coefficient for Human Capital Analyses"".",1.0.3,R
 atlas.plot,"``Automated Plotting in R"".",1.0.3,R
