@@ -11,7 +11,7 @@ atlas.class,"``A Bounded Variable Classifier"".",1.1.0,R
 atlas.kcoef,"``Statistical Analysis of Human Capital"".",1.1.0,R
 atlas.gene,"``A Career Profile Generality Coefficient"".",1.0.5,R
 atlas.comp,"``A Career Profile Competence Coefficient"".",1.0.4,R
-atlas.kind,"``A Skill Indispensability Coefficient for Human Capital Analyses"".",1.0.3,R
+atlas.aeq,"``A Skill Indispensability Coefficient for Human Capital Analyses"".",1.0.3,R
 atlas.plot,"``Automated Plotting in R"".",1.0.3,R
 atlas.employ,"``An Employability Coefficient"".",1.0.0,R
 atlas.fstatics,"``Factor-Analytic Comparative Statics"".",1.0.0,R
