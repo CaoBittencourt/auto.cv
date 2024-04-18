@@ -1,24 +1,27 @@
 package_name,package_subtitle,version,programming_language
+atlas.match,"``Quantitative Career Matching"".",3.2.3,R
+atlas.eqvl,"``Equivalence Estimators for Quantitative Career Matching"".",3.1.3,R
 atlas.skew,"``A Skewness Coefficient for Bounded Variables"".",3.0.6,R
-atlas.match,"``Quantitative Career Matching"".",3.0.0,R
-atlas.letters,"``Letter-Shaped Profiles: A Generalization of 'T-Shaped Skills'"".",2.6.0,R
-atlas.eqvl,"``A Multi-Purpose Equivalence Estimator"".",2.2.0,R
+atlas.letters,"``Letter-Shaped Profiles: A Generalization of `T-Shaped Skills'"".",2.6.0,R
 atlas.acti,"``ACTI: The Atlas Career Type Indicator"".",2.1.12,R
 atlas.efa,"``Automated Exploratory Factor Analysis"".",2.1.2,R
-atlas.aeq,"``An Attribute Equivalence Coefficient for Skill Set Analyses"".",2.0.1,R
-b3.data,"``Tidy Financial Transactions Data"".",1.3.1,R
+atlas.aeq,"``An Attribute Equivalence Coefficient for Skill Set Analyses"".",2.0.4,R
+atlas.intc,"``A Career Interchangeability Coefficient"".",2.0.2,R
+atlas.gene,"``A Career Profile Generality Coefficient"".",2.0.1,R
+b3.data,"``Tidy Financial Transactions Data"".",1.4.2,R
+b3.stats,"``Tidy Financial Transactions Statistics"".",1.4.2,R
+atlas.taxa,"``A Taxonomy for SOC Occupations"".",1.3.3,R
+atlas.econ,"``Labor Market Analyses"".",1.2.1,R
+b3.tax,"``Tidy Financial Tax Reports"".",1.2.1,R
+atlas.class,"``A Bounded Variable Classifier"".",1.2.0,R
 atlas.misc,"``Miscellaneous Helper Functions"".",1.2.0,R
 atlas.ftools,"``Factor Analysis Tools"".",1.1.1,R
-atlas.class,"``A Bounded Variable Classifier"".",1.1.0,R
 atlas.kcoef,"``Statistical Analysis of Human Capital"".",1.1.0,R
-atlas.comp,"``A Career Profile Competence Coefficient"".",1.0.5,R
-atlas.gene,"``A Career Profile Generality Coefficient"".",1.0.5,R
+atlas.comp,"``A Career Profile Competence Coefficient"".",1.0.7,R
 atlas.plot,"``Automated Plotting in R"".",1.0.3,R
 atlas.employ,"``An Employability Coefficient"".",1.0.0,R
 atlas.fstatics,"``Factor-Analytic Comparative Statics"".",1.0.0,R
-atlas.intc,"``A Career Interchangeability Coefficient"".",1.0.0,R
 atlas.notiq,"``Accurate IQ Approximations"".",1.0.0,R
 atlas.text,"``Dynamic Text Generation"".",1.0.0,R
-b3.stats,"``Tidy Financial Transactions Statistics"".",0.11.1,R
 nbs.data,"``Standardized Financial Statements of Publicly Traded Companies"".",0.2.1,R
 atlas.evol,"``An Evolutionary Model of Occupations"".",0.1.0,R

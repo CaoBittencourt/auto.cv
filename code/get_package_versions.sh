@@ -30,4 +30,3 @@ sed -i -e "s/$/,R/" pkg_info.csv
 
 # Add variable names to beginning of .csv file
 sed -i "1s/^/package_name,package_subtitle,version,programming_language \n/" pkg_info.csv
-
